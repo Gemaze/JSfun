@@ -1,0 +1,13 @@
+var a = document.querySelector('h1');
+
+document.querySelector('body').onclick = function() {
+    alert('Hihi! That tickles!');
+} //anonymous function
+
+var myName = prompt('Please enter your name.');
+localStorage.setItem('name', myName); //save in browser storage
+
+var myButton = document.querySelector('button');
+myButton.onclick = function() {
+    setUserName();
+  }
